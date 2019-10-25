@@ -1,4 +1,4 @@
-README.md - Figure 8 Disaster Response Message Categorization
+README.md - Figure 8 Disaster Response Message Classification
 
 
 ## **Project Title**
