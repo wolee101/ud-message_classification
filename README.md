@@ -3,7 +3,7 @@ README.md - Figure 8 Disaster Response Message Categorization
 
 ## **Project Title**
 
-**Disaster Response Message Categorization (Udacity Data Science Course project)**
+**Disaster Response Message Classification (Udacity Data Science Course project)**
 
 
 ## **Description**
