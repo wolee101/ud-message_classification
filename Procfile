@@ -1,1 +1,1 @@
-web: gunicorn app.run:app --log-file -
+web: gunicorn message_classification.app.run:app --log-file -
