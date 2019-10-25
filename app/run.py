@@ -72,8 +72,8 @@ def index():
     genre_names = list(genre_counts.index)
 
     # Percentages and names of 36 categories
-    cat_perc = df_m.iloc[:, 4:].isin([1]).sum(axis=0)
-    cat_names = df.iloc[:, 4:].columns
+    cat_perc = df.iloc[:, 4:].isin([1]).sum(axis=0)
+    cat_names = list(df.iloc[:, 4:].columns)
 
     # Create your own visuals
     graphs = [
@@ -100,18 +100,18 @@ def index():
             'data': [
                 Bar(
                     x=cat_names,
-                    y=cat_counts
+                    y=cat_perc
                 )
             ],
 
             'layout': {
                 'title': 'Distribution of 36 Message Categories',
                 'yaxis': {
-                    'title': "Counts"
+                    'title': "Percents"
                 },
                 'xaxis': {
                     'title': "Categories"
-                }
+                },
             }
         }
 
@@ -124,7 +124,6 @@ def index():
     # render web page with plotly graphs
     return render_template('master.html', ids=ids, graphJSON=graphJSON)
 
-    print('graph rendered.')
 # web page that handles user query and displays model results
 @app.route('/go')
 def go():
@@ -144,7 +143,7 @@ def go():
 
 
 def main():
-    app.run(host='0.0.0.0', port=port, debug=True)
+    app.run(host='0.0.0.0', port=3001, debug=True)
 
 
 if __name__ == '__main__':
