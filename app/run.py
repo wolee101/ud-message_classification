@@ -57,22 +57,21 @@ def tokenize(text):
 # load data
 engine = create_engine('sqlite:///../data/message_cleaned.db') # not tokenized
 df = pd.read_sql_table('message_cleaned', engine)
+print(df.head())
 
 # load model
-# model = joblib.load("../models/trained_rf_model.pkl")
 model = joblib.load("../models/trained_ada_model.pkl")
 
 # index webpage displays cool visuals and receives user input text for model
 @app.route('/')
 @app.route('/index')
 def index():
-
     # extract data needed for visuals
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
 
     # Percentages and names of 36 categories
-    cat_perc = df.iloc[:, 4:].isin([1]).sum(axis=0)
+    cat_perc = (df.iloc[:, 4:].isin([1]).sum(axis=0)/df.shape[0]*100).sort_values(ascending = False)
     cat_names = list(df.iloc[:, 4:].columns)
 
     # Create your own visuals
@@ -82,7 +81,7 @@ def index():
                 Bar(
                     x=genre_names,
                     y=genre_counts
-                )
+                ),
             ],
 
             'layout': {
@@ -101,17 +100,17 @@ def index():
                 Bar(
                     x=cat_names,
                     y=cat_perc
-                )
+                ),
             ],
 
             'layout': {
                 'title': 'Distribution of 36 Message Categories',
                 'yaxis': {
-                    'title': "Percents"
+                    'title': "Percentages (%)"
                 },
                 'xaxis': {
                     'title': "Categories"
-                },
+                }
             }
         }
 
@@ -124,6 +123,7 @@ def index():
     # render web page with plotly graphs
     return render_template('master.html', ids=ids, graphJSON=graphJSON)
 
+    print('graph rendered.')
 # web page that handles user query and displays model results
 @app.route('/go')
 def go():

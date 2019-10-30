@@ -78,7 +78,7 @@ def load_data(data1, data2):
 #########################################
 
 def main(data1_path, data2_path, sql_file_path, sql_table_name):
-    # Loa data files
+    # Load data files
     print("Loading csv files...")
     start = time.time()
     df_merged = load_data(data1_path, data2_path)

@@ -113,49 +113,6 @@ def tokenize(text):
             toklist.append(clean_tok)
     return ' '.join(toklist)
 
-    # return toklist
-
-# class TextTokenizer(BaseEstimator, TransformerMixin):
-#     '''
-#     This class toknize the words in messages, remove stopwords, normalize and remove white spaces.
-#     '''
-#
-#     # def __init__(self):
-#     #     pass
-#
-#
-#
-#     def transform(self, X, y = None):
-#         def tokenize(text):
-#             # Define url pattern
-#             # url_re = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\), ]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
-#
-#             # Detect and replace urls
-#             # detected_urls = re.findall(url_re, text)
-#             # for url in detected_urls:
-#             #     text = text.replace(url, "urlplaceholder")
-#
-#             tokens = word_tokenize(text)
-#             # Innitalize a lemmatizer
-#             lemmatizer = WordNetLemmatizer()
-#             # Get punctuation
-#             punct = [p for p in string.punctuation]
-#
-#             # create a list of cleaned toknized words
-#             toklist = []
-#             for tok in tokens:
-#                 clean_tok = lemmatizer.lemmatize(tok).lower().strip()
-#
-#                 words = stopwords.words('english')
-#                 # Remove stop words and punctuations
-#                 if clean_tok not in words and clean_tok not in punct:
-#                     toklist.append(clean_tok)
-#                 return ' '.join(toklist)
-#             # Apply the toknized function to messages
-#             return pd.Series(X).apply(tokenize).values
-#
-#     def fit(self, X, y=None):
-#         return self
 
 ###################################
 ##### BUILDING MODEL FUNCTION #####
@@ -165,12 +122,10 @@ def build_model():
     """
     Build the pipeline model that is going to be used as the model
     """
-    # popular_words = word_dict
 
     pipeline = Pipeline([
     ('vect', CountVectorizer(tokenizer = tokenize)),
     ('tfidf', TfidfTransformer()),
-    # ('clf', MultiOutputClassifier(RandomForestClassifier())),
     ('clf', MultiOutputClassifier(AdaBoostClassifier())),
 
     ])
@@ -199,11 +154,8 @@ def train_model(model, X_train, y_train):
     y_pred - predicted outcome data produced by the model
 
     '''
-    # train test split
-    # X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
     # fit model
-
     start = time.time()
     model.fit(X_train, y_train)
 
@@ -232,7 +184,7 @@ def evaluate_model(model, X_test, y_test, labels):
 
     # predict category values
     y_preds = model.predict(X_test)
-    # print metrics for each category
+
     for idx in range(0, len(labels)):
         classification_rpt = classification_report(y_test[:, idx], y_preds[:, idx])
         print(f'Category: {labels[idx]} - Classification Report\n', classification_rpt)
