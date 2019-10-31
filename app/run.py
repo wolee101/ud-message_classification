@@ -4,7 +4,8 @@ import pandas as pd
 import numpy as np
 import re
 import nltk
-nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'])
+from nltk.corpus import wordnet
+# nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'])
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
@@ -49,7 +50,8 @@ def tokenize(text):
 
         words = stopwords.words('english')
         # Remove stop words and punctuations
-        if clean_tok not in words and clean_tok not in punct:
+        # if clean_tok not in words and clean_tok not in punct:
+        if clean_tok not in words:
             toklist.append(clean_tok)
     return ' '.join(toklist)
 
