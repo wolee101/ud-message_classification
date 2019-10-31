@@ -84,7 +84,7 @@ def index():
             ],
 
             'layout': {
-                'title': 'Types of Message Genres',
+                'title': 'Message Genres',
                 'yaxis': {
                     'title': "Counts"
                 },
