@@ -57,7 +57,6 @@ def tokenize(text):
 # load data
 engine = create_engine('sqlite:///../data/message_cleaned.db') # not tokenized
 df = pd.read_sql_table('message_cleaned', engine)
-print(df.head())
 
 # load model
 model = joblib.load("../models/trained_ada_model.pkl")
@@ -123,7 +122,6 @@ def index():
     # render web page with plotly graphs
     return render_template('master.html', ids=ids, graphJSON=graphJSON)
 
-    print('graph rendered.')
 # web page that handles user query and displays model results
 @app.route('/go')
 def go():
