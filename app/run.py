@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import re
 import nltk
-nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'], 'app/nltk_data/')
+nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'])
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
@@ -139,7 +139,6 @@ def go():
         query=query,
         classification_result=classification_results
     )
-
 
 def main():
     app.run(host='0.0.0.0', port=3001, debug=True)

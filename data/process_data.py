@@ -6,7 +6,7 @@ import time
 
 '''
 Run the script like this:
-python3 process_data.py 'messages.csv' 'categories.csv' 'message_cat.db' 'message_cat'
+python3 process_data.py 'messages.csv' 'categories.csv' 'message_cleaned.db' 'message_cleaned'
 '''
 
 ###########################
