@@ -27,7 +27,7 @@ The goal of this project is to train the machine learning algorithm to categoriz
 3. **Web Application**
 *   This script loads the SQLite database and pickle file and displays the two graphs (message genres and categorization). 
 *   The user can enter the message into app and get the results for all 36 categories.
-*   Run run.py as follows: _<code>python3 run.py </code>_
+*   To run run.py: _<code>python3 run.py </code>_
  
  
 **Dataset Used:**
@@ -40,12 +40,15 @@ Random Forest algorithm was used to train the model, with TFIDF Vectorizer for t
  
 
 ## **App**
-
-<center>Distribution of Message Genres and Categories</center>
+<p align="center">
+  <center>Distribution of Message Genres and Categories</center>
+</p>
 
 ![Alt text](/data/disaster_response_app_img1.png?raw=true "Distribution of Message Genres and Categories")
 
-<center>Sample Message Classification</center>
+<p align="center">
+  <center>Sample Message Classification</center>
+</p>
 
 ![Alt text](/data/disaster_response_app_img2.png?raw=true "Message Classification ")
 
