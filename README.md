@@ -3,7 +3,7 @@ README.md - Figure 8 Disaster Response Message Classification
  
 ## **Project Title**
  
-**Disaster Response Message Classification (Udacity Data Science Course project)**
+**Disaster Response Message Classification**
  
  
  
@@ -65,7 +65,7 @@ _<code>pip install -r requirements.txt</code>_
  
  
  
-This project was completed as part of the Udacity Data Scientist Nanodegree program. 
+This project was completed as part of the Udacity Data Scientist Nanodegree program. Course materials and starter code for web application were used to complete the project.
  
  
 <!-- Docs to Markdown version 1.0β17 -->
