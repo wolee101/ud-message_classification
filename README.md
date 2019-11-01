@@ -1,5 +1,3 @@
-# ud-message_classification
- 
 README.md - Figure 8 Disaster Response Message Classification
  
  
@@ -14,10 +12,8 @@ The goal of this project is to train the machine learning algorithm to categoriz
  
 **Pocesses**
  
- 
- 
 1. **ETL Data Preparation**
-*   This script merges the messages and categories data files and split the categories column which includes all categories into 36 separate columns.
+*   This script merges the disaster messages and categories data files and split the categories column (which includes all categories) into 36 separate columns.
 *   Duplicate entries are removed.
 *   The cleaned merged dataset is saved as a SQLite database.
 *   To run process_data.py: _<code>python3 ‘messages.csv’ ‘categoris.csv’ ‘messages_cleaned.db’ ‘message_table’</code>_
@@ -36,18 +32,17 @@ The goal of this project is to train the machine learning algorithm to categoriz
  
 **Dataset Used:**
  
-Two files, messages.csv and categories.csv, from Figure 8.
+Two files, messages.csv and categories.csv, provided by Figure 8.
  
 **Model Used:**
  
-Random Forest algorithm with hyper parameters
- 
+Random Forest algorithm was used to train the model, with TFIDF Vectorizer for text classification. 
  
 ## **App Images**
  
 ![Alt text](/data/disaster_response_app_img1.png?raw=true "Distribution of Message Genres and Categories")
  
-![Alt text](/relative/path/to/img.png?raw=true "Message Classification ")
+![Alt text](/data/disaster_response_app_img2.png?raw=true "Message Classification ")
  
 ## **Dependencies and Installation**
  
