@@ -24,10 +24,11 @@ The goal of this project is to train the machine learning algorithm to categoriz
 *   The model evaluation metrics are displayed for each category, including f1 score, precision and recall for the test set.  
 *   To run train_classifier.py: _<code>python3 train_classifier.py 'message_cat.db' 'trained_rf_model.pkl'</code>_
  
-3. **Web Application**
+3. **Dployment**
 *   This script loads the SQLite database and pickle file and displays the two graphs (message genres and categorization). 
 *   The user can enter the message into app and get the results for all 36 categories.
 *   To run run.py: _<code>python3 run.py </code>_
+*   To see the web app: <code>http://0.0.0.0:3001/</code>
  
  
 **Dataset Used:**
