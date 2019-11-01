@@ -55,7 +55,7 @@ Random Forest algorithm was used to train the model, with TFIDF Vectorizer for t
  
 ## **Dependencies and Installation**
  
-You need to install the python, nlp, web, and visualization packages and libraries. they can be installed by running:
+You need to install the python, nlp, web, and visualization packages and libraries. They can be installed by running:
  
 _<code>pip install -r requirements.txt</code>_ 
 
