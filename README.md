@@ -34,7 +34,7 @@ The goal of this project is to train the machine learning algorithm to categoriz
  
 **Dataset Used:**
  
-Two files, messages.csv and categories.csv, provided by Figure 8.
+Two files, <code>messages.csv</code> and <code>categories.csv</code>
  
 **Model Used:**
  
