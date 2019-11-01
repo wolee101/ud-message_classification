@@ -38,15 +38,14 @@ Two files, messages.csv and categories.csv, provided by Figure 8.
  
 Random Forest algorithm was used to train the model, with TFIDF Vectorizer for text classification. 
  
+
 ## **App**
 
-```
-Distribution of Message Genres and Categories
+<center>Distribution of Message Genres and Categories</center>
 
 ![Alt text](/data/disaster_response_app_img1.png?raw=true "Distribution of Message Genres and Categories")
 
-```
-Sample Message Classification
+<center>Sample Message Classification</center>
 
 ![Alt text](/data/disaster_response_app_img2.png?raw=true "Message Classification ")
 
@@ -56,9 +55,7 @@ Sample Message Classification
 You need to install the python, nlp, web, and visualization packages and libraries. they can be installed by running:
  
 _<code>pip install -r requirements.txt</code>_ 
- 
- 
- 
+
  
 ## **Acknowledgments**
  
