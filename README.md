@@ -38,11 +38,18 @@ Two files, messages.csv and categories.csv, provided by Figure 8.
  
 Random Forest algorithm was used to train the model, with TFIDF Vectorizer for text classification. 
  
-## **App Images**
- 
+## **App**
+
+```
+Distribution of Message Genres and Categories
+
 ![Alt text](/data/disaster_response_app_img1.png?raw=true "Distribution of Message Genres and Categories")
- 
+
+```
+Sample Message Classification
+
 ![Alt text](/data/disaster_response_app_img2.png?raw=true "Message Classification ")
+
  
 ## **Dependencies and Installation**
  
