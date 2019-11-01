@@ -6,6 +6,7 @@ README.md - Figure 8 Disaster Response Message Classification
 **Disaster Response Message Classification (Udacity Data Science Course project)**
  
  
+ 
 ## **Description**
  
 The goal of this project is to train the machine learning algorithm to categorize incoming disaster-related messages into 36 categories and to display the genres of messages message categories on the web application. The data was provided by FigureEight and included tweets and text sent during real disasters. 
@@ -24,7 +25,7 @@ The goal of this project is to train the machine learning algorithm to categoriz
 *   The model evaluation metrics are displayed for each category, including f1 score, precision and recall for the test set.  
 *   To run train_classifier.py: _<code>python3 train_classifier.py 'message_cat.db' 'trained_rf_model.pkl'</code>_
  
-3. **Dployment**
+3. **Deployment**
 *   This script loads the SQLite database and pickle file and displays the two graphs (message genres and categorization). 
 *   The user can enter the message into app and get the results for all 36 categories.
 *   To run run.py: _<code>python3 run.py </code>_
@@ -39,6 +40,7 @@ Two files, messages.csv and categories.csv, provided by Figure 8.
  
 Random Forest algorithm was used to train the model, with TFIDF Vectorizer for text classification. 
  
+ 
 
 ## **Web App**
 <p align="center"><code>Distribution of Message Genres and Categories</code></center></p>
@@ -50,11 +52,13 @@ Random Forest algorithm was used to train the model, with TFIDF Vectorizer for t
 ![Alt text](/data/disaster_response_app_img2.png?raw=true "Message Classification ")
 
  
+ 
 ## **Dependencies and Installation**
  
 You need to install the python, nlp, web, and visualization packages and libraries. they can be installed by running:
  
 _<code>pip install -r requirements.txt</code>_ 
+
 
  
 ## **Acknowledgments**
