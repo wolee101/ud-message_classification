@@ -40,11 +40,11 @@ Random Forest algorithm was used to train the model, with TFIDF Vectorizer for t
  
 
 ## **Web App**
-<p align="center">Distribution of Message Genres and Categories</center></p>
+<p align="center"><code>Distribution of Message Genres and Categories</code></center></p>
 
 ![Alt text](/data/disaster_response_app_img1.png?raw=true "Distribution of Message Genres and Categories")
 
-<p align="center">Sample Message Classification</center></p>
+<p align="center"><code>Sample Message Classification</code></center></p>
 
 ![Alt text](/data/disaster_response_app_img2.png?raw=true "Message Classification ")
 
