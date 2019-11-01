@@ -29,7 +29,7 @@ The goal of this project is to train the machine learning algorithm to categoriz
 3. **Web Application**
 *   This script loads the SQLite database and pickle file and displays the two graphs (message genres and categorization). 
 *   The user can enter the message into app and get the results for all 36 categories.
-*   Run run.py as follows: _python3 run.py _
+*   Run run.py as follows: <code>_python3 run.py _</code>
 
 
 **Dataset Used:**
@@ -41,23 +41,43 @@ Two files, messages.csv and categories.csv, from Figure 8.
 Random Forest algorithm with hyper parameters
 
 
+**App Images**
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 1.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Disaster-Message0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/Disaster-Message0.png "image_tooltip")
+
+
+<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 1.</p>
+<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
+
+<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
+
+<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
+
+
+
+<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/Disaster-Message0.png). Store image on your image server and adjust path/filename if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
+
+
+![alt_text](images/Disaster-Message0.png "image_tooltip")
 ## **Dependencies and Installation**
 
-You need to install the following python, nlp, web, and visualization packages and libraries:
+You need to install the python, nlp, web, and visualization packages and libraries. they can be installed by running:
 
-json, plotly, pandas, nltk, flask, sklearn, sqlalchemy, sys, numpy, re, pickle
+run pip install -r requirements.txt. 
 
 
-
-*   scikit-learn: pip install scikit-learn
-*   flask: pip install flask
-*   plotly: pip install plotly
-*   nltk: pip install nltk
-*   nltk.download(['punkt', 'wordnet', 'averaged_perceptron_tagger'])
-*   nltk.download (‘stopwords’) 
-*   matplot: pip install matplotlib
-*   seaborn: pip install seaborn
-*   Joblib: pip install joblib
 
 
 ## **Acknowledgments**
